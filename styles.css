@@ -1,4 +1,97 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+.section1 {
+    display: flex;
+    flex-flow: row;
+    background-color: #1f2937;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+}
+
+.section1 ul {
+    display: flex;
+}
+
+.section1 li {
+    flex-flow: row;
+    padding: 0 0 0 25px;
+    list-style: none;
+}
+
+.section2 {
+    display: flex;
+    padding: 50px 100px;
+    background-color: #1f2937;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2 .left {
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.section2 p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 15px 0;
+}
+
+.section2 .right {
+    max-width: 25%;
+}
+
+.section3 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: white;
+}
+
+.section3 .header {
+    color: black;
+}
+
+.section3 .boxes {
+    display: flex;
+    flex-flow: row;
+}
+
+.section3 .box  img{
+    max-width: 100px;
+    border-style: solid;
+}
